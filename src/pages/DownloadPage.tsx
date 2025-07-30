@@ -62,7 +62,7 @@ const DownloadPage: React.FC = () => {
 
   const downloadLinks: Record<string, string> = {
     windows: `${DOWNLOAD_BASE}/MercorTimeTrackerSetup.exe`,
-    mac: `${DOWNLOAD_BASE}/MercorTimeTracker.dmg`,
+    mac: 'https://github.com/seemanitharwal/frontend/releases/download/macDmg/Mercor.Time.Tracker-1.0.0.dmg',
     linux: `${DOWNLOAD_BASE}/MercorTimeTracker.AppImage`
   }
 
