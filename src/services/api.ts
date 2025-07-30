@@ -39,12 +39,12 @@ apiClient.interceptors.response.use(
 export const apiService = {
   // Employee Management
   async createEmployee(data: { name: string; email: string }) {
-    const response = await apiClient.post('/employees', data)
+    const response = await apiClient.post('/employees/', data)
     return response.data
   },
 
   async getEmployees(params?: { skip?: number; limit?: number }) {
-    const response = await apiClient.get('/employees', { params })
+    const response = await apiClient.get('/employees/', { params })
     return response.data
   },
 
